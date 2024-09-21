@@ -1,0 +1,46 @@
+div{
+    padding:0;
+    margin: 0;
+}
+
+#box{
+    width: 100%;
+    height: auto; 
+    min-height: 215px;
+    background-color: aqua;
+    border: 3px solid;
+    border-color: green;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#left{
+    background-color: bisque;
+    height: auto;
+    width: 25%;
+    box-sizing: border-box;
+    float: left;
+}
+
+#text{
+    background-color: gray;
+    padding: 0px;
+    width:75%;
+    box-sizing: border-box;
+    float: right;
+}
+
+@media(max-width:500px){
+    #text, #left{
+        width:100%;
+        float:none;
+        overflow: auto;
+    }
+    li{
+        display: table-cell;
+    }
+}
+
+
+
+

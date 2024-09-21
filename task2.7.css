@@ -1,0 +1,48 @@
+div{
+    width: 180px;
+    height: 110px;
+    margin: 0;
+    color: white; 
+}
+
+#purple{
+    position: static;
+    background-color: rgb(152, 7, 230);
+}
+
+#red{
+    position: relative;
+    bottom: 0px;
+    background-color: rgb(157, 6, 6);
+}
+
+#orange{ 
+    position: relative;
+    top: -20px;                 
+    left: 20px;
+    background-color: orange;
+}
+
+#pink{ 
+    position: relative;
+    top: 20px;     
+    width: 550px;                 
+    height: 300px;
+    background-color: rgb(216, 92, 125);
+}
+
+#darkpurple{
+    position: absolute;
+    top: 150px;                 
+    left: 370px;
+    background-color: rgb(73, 2, 73);
+}
+
+#green{
+    position: fixed; 
+    bottom: 0px; 
+    right: 0px; 
+    width: 100px; 
+    height: 100px; 
+    background-color: green;
+}

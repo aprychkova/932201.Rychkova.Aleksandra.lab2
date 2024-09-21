@@ -1,0 +1,15 @@
+#floatbox{
+    float: left;
+    width: 120px;
+    height: 80px;
+    background-color: aqua;
+    margin-bottom: 10px; 
+}
+
+#clearpropertybox{
+    clear:both;
+    height: 30px;
+    background-color: bisque;
+}
+
+
