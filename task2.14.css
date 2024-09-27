@@ -4,6 +4,9 @@ div{
 }
 
 #box{
+    
+    display: flex;
+    flex-direction: row;
     width: 100%;
     height: auto; 
     min-height: 215px;
@@ -14,9 +17,10 @@ div{
     overflow: hidden;
 }
 
-#left{
+nav{
+    
     background-color: bisque;
-    height: auto;
+    height: fit-content;
     width: 25%;
     box-sizing: border-box;
     float: left;
@@ -30,15 +34,34 @@ div{
     float: right;
 }
 
-@media(max-width:500px){
-    #text, #left{
+@media(max-width:768px){
+    #box{
+        flex-direction: column;
+    }
+    nav{
+        padding: 0;
         width:100%;
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         float:none;
         overflow: auto;
     }
-    li{
-        display: table-cell;
+    #text{
+        width: 100%;
     }
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style-type: none;
+        
+    }
+    ul>li{
+        padding-right: 3px;
+    }
+    
+
 }
 
 

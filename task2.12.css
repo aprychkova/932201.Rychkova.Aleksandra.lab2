@@ -4,6 +4,9 @@ div{
 }
 
 #box{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
     width: 100%;
     height: auto; 
     background-color: aqua;
@@ -14,6 +17,7 @@ div{
 }
 
 #left{
+    flex: 1;
     background-color: bisque;
     height: 100px;
     width: 25%;
@@ -22,20 +26,18 @@ div{
 }
 
 #text{
+    flex: 3;
     background-color: gray;
     padding: 0px;
-    width:75%;
+    width:80%;
     box-sizing: border-box;
     float: right;
 }
 
-@media(max-width:500px){
-    #text{
-        width:100%;
-        float:none;
-        overflow: auto;
+
+@media(max-width:768px){
+    #box{flex-direction: column;
+        gap: 0px;
     }
 }
-
-
 
